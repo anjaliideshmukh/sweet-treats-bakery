@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Sweet Treats</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Sweet Treats</h1>
+
+        <section class="button_cart">
+            <a href="cart.html" class="cart-link">
+                🛒 <span id="cart-count">0</span>
+            </a>
+        </section>
+
+    </header>
+
+    <!-- Cart -->
+
+    <section class="cart-section">
+
+        <h2>Shopping Cart</h2>
+
+        <!-- Products will appear here -->
+         <div id="cart-items"></div>
+
+         <div class="cart-total">
+
+            <h3>Total : ₹<span id="total-price">0</span></h3>
+
+            <a href="order_form.html">
+                <button class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
