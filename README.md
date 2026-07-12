@@ -1,21 +1,20 @@
-# 🍰 Sweet Treats Bakery Website
+# Sweet Treats Bakery Website 🍰
 
 A responsive bakery website built using HTML, CSS, and JavaScript.
 
 ## Features
 
-- Responsive Design
-- Shopping Cart
+- Responsive design
+- Product showcase
 - Add to Cart
-- Remove from Cart
-- Cart Total Calculation
-- Form Validation
+- Order Form
 - Local Storage
-- Success Page
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
-- Local Storage
+
+## Author
+Anjali Deshmukh
