@@ -121,7 +121,7 @@ if(cartItems){
 }
 // ================= ORDER FORM =================
 
-cconst selectedItem = document.getElementById("selectedItem");
+const selectedItem = document.getElementById("selectedItem");
 
 if (selectedItem) {
 
