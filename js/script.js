@@ -121,14 +121,35 @@ if(cartItems){
 }
 // ================= ORDER FORM =================
 
-const selectedItem = document.getElementById("selectedItem");
+cconst selectedItem = document.getElementById("selectedItem");
 
-if(selectedItem){
+if (selectedItem) {
 
-    const product = localStorage.getItem("selectedProduct");
+    // Check if there are products in the cart
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if(product){
-        selectedItem.value = product;
+    if (cart.length > 0) {
+
+        let productList = "";
+
+        cart.forEach(function(product){
+
+            productList += product.name + "\n";
+
+        });
+
+        selectedItem.value = productList;
+
+    }
+    else{
+
+        // If cart is empty, use Order button product
+        const product = localStorage.getItem("selectedProduct");
+
+        if(product){
+            selectedItem.value = product;
+        }
+
     }
 
 }
